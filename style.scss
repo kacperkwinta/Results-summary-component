@@ -46,6 +46,12 @@ html {
 body {
 	font-size: 1.8rem;
 	color: $color-neutral-1;
+
+	height: 95vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 ////////////////////////
 ////// TYPOGRAPHY //////
@@ -82,8 +88,6 @@ p {
 ////// STYLES //////
 /// ////////////////
 main {
-	margin: 10rem auto 2.4rem auto;
-
 	display: flex;
 	justify-content: center;
 }
@@ -98,7 +102,9 @@ main {
 	border-radius: 3rem;
 }
 
+////////////////////
 // BOX WITH GRADIENT
+////////////////////
 .box-result {
 	background-image: linear-gradient($color-gradient-1, $color-gradient-2);
 	padding: 3.2rem 6.4rem 4.8rem 6.4rem;
@@ -138,7 +144,9 @@ main {
 	max-width: 25rem;
 }
 
+////////////
 // WHITE BOX
+////////////
 .box-summary {
 	padding: 4.8rem;
 
@@ -216,16 +224,26 @@ main {
 	background-image: linear-gradient($color-gradient-1, $color-gradient-2);
 }
 
-/////// FOOTER
+/////////
+// FOOTER
+/////////
 footer {
 	color: $color-neutral-4;
 	text-align: center;
 	padding: 1.2rem;
 	line-height: 1.5;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 
-	.footer-link {
+	.footer-link:link,
+	.footer-link:visited {
 		color: $color-primary-3;
+		transition: all 0.3s ease;
+	}
+
+	.footer-link:active,
+	.footer-link:hover {
+		color: $color-primary-3;
+		text-decoration: none;
 	}
 }
 
