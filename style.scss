@@ -249,8 +249,18 @@ footer {
 
 /////////////// BELOW 770 PX
 @media (max-width: 48.125em) {
+	body {
+		height: auto;
+	}
+
 	.container {
 		flex-direction: column;
+	}
+
+	// GRADIENT BOX
+	.box-result {
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
 	}
 }
 
@@ -263,12 +273,6 @@ footer {
 
 	.container {
 		width: 100%;
-	}
-
-	// GRADIENT BOX
-	.box-result {
-		border-top-right-radius: 0;
-		border-top-left-radius: 0;
 	}
 
 	// WHITE BOX
