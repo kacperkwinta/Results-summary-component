@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- FAVICON -->
 		<link
 			rel="icon"
 			type="image/png"
@@ -14,15 +15,78 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		Your Result 76 of 100 Great You scored higher than 65% of the people who
-		have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
-		/ 100 Visual 72 / 100 Continue
+		<main>
+			<div class="container">
+				<div class="box-result">
+					<h2 class="heading-secondary">Your Result</h2>
 
-		<div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Kacper Kwinta</a>.
-		</div>
+					<div class="circle mrg-btm-s">
+						<p class="score">76</p>
+						<p class="score-limit">of 100</p>
+					</div>
+
+					<h1 class="heading-primary mrg-btm-s mrg-top-s">Great</h1>
+
+					<p class="result-description">
+						You scored higher than 65% of the people who have taken these tests.
+					</p>
+				</div>
+
+				<div class="box-summary">
+					<h2 class="heading-secondary mrg-btm-s">Summary</h2>
+
+					<div class="summary-wrapper mrg-btm-m">
+						<div class="summary-option">
+							<div class="type">
+								<img src="assets/images/icon-reaction.svg" alt="" />
+								<span>Reaction</span>
+							</div>
+							<div class="score">
+								<span class="score-points">80</span> / 100
+							</div>
+						</div>
+
+						<div class="summary-option">
+							<div class="type">
+								<img src="assets/images/icon-memory.svg" alt="" />
+								<span>Memory</span>
+							</div>
+							<div class="score">
+								<span class="score-points">80</span> / 100
+							</div>
+						</div>
+
+						<div class="summary-option">
+							<div class="type">
+								<img src="assets/images/icon-verbal.svg" alt="" />
+								<span>Verbal</span>
+							</div>
+							<div class="score">
+								<span class="score-points">80</span> / 100
+							</div>
+						</div>
+
+						<div class="summary-option">
+							<div class="type">
+								<img src="assets/images/icon-visual.svg" alt="" />
+								<span>Visual</span>
+							</div>
+							<div class="score">
+								<span class="score-points">80</span> / 100
+							</div>
+						</div>
+					</div>
+
+					<a class="box-link" href="#me" id="me">Continue</a>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			Coded width by
+			<a class="footer-link" href="https://github.com/kacperkwinta" target="_blank"
+				>Kacper Kwinta</a
+			>, challenge by Frontend Mentor
+		</footer>
 	</body>
 </html>
